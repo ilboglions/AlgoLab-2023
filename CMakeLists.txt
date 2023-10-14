@@ -59,7 +59,7 @@ target_link_libraries(hiking_maps CGAL::CGAL)
 # Problems Of The Week
 
 add_executable(deck_of_cards ProblemOfTheWeek/DeckOfCards/src/main.cpp)
-add_executable(james_bonds_sovereign ProblemOfTheWeek/JamesBondsSovereign/src/main.cpp)
+add_executable(james_bonds_sovereign ProblemOfTheWeek/JamesBondsSovereigns/src/main.cpp)
 add_executable(the_iron_islands ProblemOfTheWeek/TheIronIslands/src/main.cpp)
 
 
