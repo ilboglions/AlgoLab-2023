@@ -28,6 +28,7 @@ make
 | [First Hit](Week4/FirstHit/this.pdf)                          | [First Hit](Week4/FirstHit/src/main.cpp)                          |  100  |  4   |
 | [Antenna](Week4/Antenna/this.pdf)                             | [Antenna](Week4/Antenna/src/main.cpp)                             |  100  |  4   |
 | [Hiking Maps](Week4/HikingMaps/this.pdf)                      | [Hiking Maps](Week4/HikingMaps/src/main.cpp)                      |  100  |  4   |
+| [Planet Express](ProblemOfTheWeek/PlanetExpress/this.pdf)  | [Planet Express](ProblemOfTheWeek/PlanetExpress/src/main.cpp)        |  100  |POTW 5|
 
 
 
