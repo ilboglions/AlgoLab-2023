@@ -1,4 +1,4 @@
-# Algorithms Lab - ETH Zürich - Fall 2023
+# [Algorithms Lab - ETH Zürich - Fall 2023](https://cadmo.ethz.ch/education/lectures/HS23/algolab/index.html)
 Exercises from the Algorithms Lab class - ETH Zürich - MSc. Computer Science
 
 ## Build
