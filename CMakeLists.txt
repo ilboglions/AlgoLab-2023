@@ -56,13 +56,22 @@ target_link_libraries(antenna CGAL::CGAL)
 target_link_libraries(hiking_maps CGAL::CGAL)
 
 
+# Week 5
+add_executable(moving_books Week5/MovingBooks/src/main.cpp)
+add_executable(boats Week5/Boats/src/main.cpp)
+add_executable(asterix_the_gaul Week5/AsterixTheGaul/src/main.cpp)
+add_executable(severus_snape Week5/SeverusSnape/src/main.cpp)
+
+
 # Problems Of The Week
 
 add_executable(deck_of_cards ProblemOfTheWeek/DeckOfCards/src/main.cpp)
 add_executable(james_bonds_sovereign ProblemOfTheWeek/JamesBondsSovereigns/src/main.cpp)
 add_executable(the_iron_islands ProblemOfTheWeek/TheIronIslands/src/main.cpp)
 add_executable(planet_express ProblemOfTheWeek/PlanetExpress/src/main.cpp)
+add_executable(motorcycles ProblemOfTheWeek/Motorcycles/src/main.cpp)
 
+target_link_libraries(motorcycles CGAL::CGAL)
 target_link_libraries(planet_express Boost::boost)
 
 

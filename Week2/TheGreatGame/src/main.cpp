@@ -20,7 +20,7 @@ void solve(){
     int n,m;
     int x,y;
     std::cin>>n>>m;
-    vector<vector<int>> matrix(n);
+    vector<vector<int> > matrix(n);
     int r,b;
     std::cin>>r>>b;
     r--;
