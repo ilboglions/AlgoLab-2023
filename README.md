@@ -37,7 +37,7 @@ make
 | [Tiles](Week6/Tiles/this.pdf)                                     | [Tiles](Week6/Tiles/src/main.cpp)                                     |  100  |  6   |
 | [London](Week6/London/this.pdf)                                   | [Tiles](Week6/London/src/main.cpp)                                    |  100  |  6   |
 | [Coin Tossing Tournament](Week6/CoinTossingTournament/this.pdf)   | [Coin Tossing Tournament](Week6/CoinTossingTournament/src/main.cpp)   |  100  |  6   |
-| [Knights](Week6/Knights/this.pdf)                                 | [Knights](Week6/Knights/src/main.cpp                                  |  100  |  6   |
+| [Knights](Week6/Knights/this.pdf)                                 | [Knights](Week6/Knights/src/main.cpp)                                  |  100  |  6   |
 
 
 
