@@ -68,13 +68,14 @@ add_executable(severus_snape Week5/SeverusSnape/src/main.cpp)
 add_executable(coin_tossing Week6/CoinTossingTournament/src/main.cpp)
 add_executable(knights Week6/Knights/src/main.cpp)
 add_executable(london Week6/London/src/main.cpp)
+add_executable(london_alternative Week6/London/src/main_lessnodes.cpp)
 add_executable(tiles Week6/Tiles/src/main.cpp)
 
 target_link_libraries(coin_tossing Boost::boost)
 target_link_libraries(knights Boost::boost)
 target_link_libraries(london Boost::boost)
+target_link_libraries(london_alternative Boost::boost)
 target_link_libraries(tiles Boost::boost)
-
 
 
 # Problems Of The Week
