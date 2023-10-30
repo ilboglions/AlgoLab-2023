@@ -86,6 +86,7 @@ add_executable(the_iron_islands ProblemOfTheWeek/TheIronIslands/src/main.cpp)
 add_executable(planet_express ProblemOfTheWeek/PlanetExpress/src/main.cpp)
 add_executable(motorcycles ProblemOfTheWeek/Motorcycles/src/main.cpp)
 add_executable(octopussy ProblemOfTheWeek/Octopussy/src/main.cpp)
+add_executable(octopussy_alternative ProblemOfTheWeek/Octopussy/src/main_fromleaves.cpp)
 
 target_link_libraries(motorcycles CGAL::CGAL)
 target_link_libraries(planet_express Boost::boost)
