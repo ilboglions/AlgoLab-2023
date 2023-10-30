@@ -38,7 +38,7 @@ make
 | [London](Week6/London/this.pdf)                                   | [London](Week6/London/src/main.cpp) / [Alternative Solution](Week6/London/src/main_lessnodes.cpp)|  100  |  6   |
 | [Coin Tossing Tournament](Week6/CoinTossingTournament/this.pdf)   | [Coin Tossing Tournament](Week6/CoinTossingTournament/src/main.cpp)   |  100  |  6   |
 | [Knights](Week6/Knights/this.pdf)                                 | [Knights](Week6/Knights/src/main.cpp)                                 |  100  |  6   |
-| [Octopussy](ProblemOfTheWeek/Octopussy/octopussy.pdf)             | [Octopussy](ProblemOfTheWeek/Octopussy/src/main.cpp                   |  100  |POTW 7|
+| [Octopussy](ProblemOfTheWeek/Octopussy/octopussy.pdf)             | [Octopussy](ProblemOfTheWeek/Octopussy/src/main.cpp)                  |  100  |POTW 7|
 
 
 
