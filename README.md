@@ -43,7 +43,7 @@ make
 | [Germs](Week7/Germs/this.pdf)                                     | [Germs](Week7/Germs/src/main.cpp)                                     |  100  |  7   |
 | [H1N1](Week7/H1N1/this.pdf)                                       | [H1N1](Week7/H1N1/src/main.cpp)                                       |  100  |  7   |
 | [Golden Eye](Week7/GoldenEye/this.pdf)                            | [Golden Eye](Week7/GoldenEye/src/main.cpp)                            |  100  |  7   |
-| [Kingdom Defense](ProblemOfTheWeek/KingdomDefense/kingdom_defence.pdf)| [Kingdom Defense](ProblemOfTheWeek/KingdomDefense/src/main.cpp)|  |  100  |POTW 8|
+| [Kingdom Defense](ProblemOfTheWeek/KingdomDefense/kingdom_defence.pdf)| [Kingdom Defense](ProblemOfTheWeek/KingdomDefense/src/main.cpp)   |  100  |POTW 8|
 
 
 
