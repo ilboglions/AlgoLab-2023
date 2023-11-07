@@ -44,15 +44,15 @@ int main(){
 }
 void solve(){
     int w,h;
-    std::cin>>h>>w;
-    int off = NUMLETTERS*NUMLETTERS;
-    graph G(off + NUMLETTERS);
+    std::cin>>h>>w;;
+    graph G(NUMLETTERS);
     const vertex_desc v_source = boost::add_vertex(G);
     const vertex_desc v_sink = boost::add_vertex(G);
     edge_adder adder(G);
     int n;
     char tmp;
     vector< int > occurences(NUMLETTERS, 0);
+    vector<int > firstpageoccurrences(NUMLETTERS,0);
     vector< vector<int> > couples(NUMLETTERS, vector<int>(NUMLETTERS, 0));
     vector< vector< int > > firstpage(h, vector<int>(w));
     string message;
@@ -65,6 +65,7 @@ void solve(){
         for(int j=0; j < w; j++){
             std::cin>>tmp;
             firstpage[i][j] = tmp-OFFSET;
+            firstpageoccurrences[tmp-OFFSET]++;
         }
     }
     for (int i=0; i < h; i++){
@@ -74,12 +75,13 @@ void solve(){
         }
     }
     for(int i=0; i < NUMLETTERS; i++){
+        if(firstpageoccurrences[i])
+            adder.add_edge(v_source, i , firstpageoccurrences[i]);
         for(int j=0; j < NUMLETTERS; j++){
-            adder.add_edge(v_source, (i*NUMLETTERS) + j , couples[i][j]);
-            adder.add_edge((i*NUMLETTERS) + j , off + i,couples[i][j] );
-            adder.add_edge((i*NUMLETTERS) + j , off + j,couples[i][j] );
+            if(couples[i][j])
+                adder.add_edge(i ,j,couples[i][j]);
         }
-        adder.add_edge(off+i, v_sink , occurences[i]);
+        adder.add_edge(i, v_sink , occurences[i]);
     }
     long flow = boost::push_relabel_max_flow(G, v_source, v_sink);
     if(flow == (long)n)

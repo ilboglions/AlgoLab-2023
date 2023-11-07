@@ -35,7 +35,7 @@ make
 | [Severus Snape](Week5/SeverusSnape/this.pdf)                      | [Severus Snape](Week5/SeverusSnape/src/main.cpp)                      |  100  |  5   |
 | [Motorcycles](ProblemOfTheWeek/Motorcycles/this.pdf)              | [Motorcycles](ProblemOfTheWeek/Motorcycles/src/main.cpp)              |  100  |POTW 6|
 | [Tiles](Week6/Tiles/this.pdf)                                     | [Tiles](Week6/Tiles/src/main.cpp)                                     |  100  |  6   |
-| [London](Week6/London/this.pdf)                                   | [London](Week6/London/src/main.cpp) / [Alternative Solution](Week6/London/src/main_lessnodes.cpp)|  100  |  6   |
+| [London](Week6/London/this.pdf)                                   | [London](Week6/London/src/main.cpp)|  100  |6   |
 | [Coin Tossing Tournament](Week6/CoinTossingTournament/this.pdf)   | [Coin Tossing Tournament](Week6/CoinTossingTournament/src/main.cpp)   |  100  |  6   |
 | [Knights](Week6/Knights/this.pdf)                                 | [Knights](Week6/Knights/src/main.cpp)                                 |  100  |  6   |
 | [Octopussy](ProblemOfTheWeek/Octopussy/octopussy.pdf)             | [Octopussy](ProblemOfTheWeek/Octopussy/src/main.cpp) / [Alternative Solution](ProblemOfTheWeek/Octopussy/src/main_fromleaves.cpp)                |  100  |POTW 7|
