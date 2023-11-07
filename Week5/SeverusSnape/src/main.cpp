@@ -120,5 +120,5 @@ bool iscompatible(Comb & combination, Potion_a & toadd){
     long long secondcomb = get<1>(combination);
     long long firsttoadd =get<0>(toadd);
     long long secondtoadd = get<1>(toadd);
-    return ((firstcomb | firsttoadd) == (firstcomb ^ firsttoadd)) && ((secondcomb | secondtoadd)== (secondcomb ^ secondtoadd));
+    return (((firstcomb & firsttoadd) | (secondcomb & secondtoadd)) == 0);
 }

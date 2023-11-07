@@ -39,6 +39,11 @@ make
 | [Coin Tossing Tournament](Week6/CoinTossingTournament/this.pdf)   | [Coin Tossing Tournament](Week6/CoinTossingTournament/src/main.cpp)   |  100  |  6   |
 | [Knights](Week6/Knights/this.pdf)                                 | [Knights](Week6/Knights/src/main.cpp)                                 |  100  |  6   |
 | [Octopussy](ProblemOfTheWeek/Octopussy/octopussy.pdf)             | [Octopussy](ProblemOfTheWeek/Octopussy/src/main.cpp) / [Alternative Solution](ProblemOfTheWeek/Octopussy/src/main_fromleaves.cpp)                |  100  |POTW 7|
+| [Bistro](Week7/Bistro/this.pdf)|                                  | [Bistro](Week7/Bistro/src/main.cpp)                                   |  100  |  7   |
+| [Germs](Week7/Germs/this.pdf)|                                    | [Germs](Week7/Germs/src/main.cpp)                                     |  100  |  7   |
+| [H1N1](Week7/H1N1/this.pdf)|                                      | [H1N1](Week7/H1N1/src/main.cpp)                                       |  100  |  7   |
+| [Golden Eye](Week7/GoldenEye/this.pdf)|                           | [Golden Eye](Week7/GoldenEye/src/main.cpp)                            |  100  |  7   |
+| [Kingdom Defense](ProblemOfTheWeek/KingdomDefense/kingdom_defence.pdf)| [Kingdom Defense](ProblemOfTheWeek/KingdomDefense/src/main.cpp)|  |  100  |POTW 8|
 
 
 

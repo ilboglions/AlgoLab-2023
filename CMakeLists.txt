@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.27)
 project(algolab)
+set(CMAKE_CXX_STANDARD 14)
 
 
 find_package(CGAL)
@@ -77,6 +78,19 @@ target_link_libraries(london Boost::boost)
 target_link_libraries(london_alternative Boost::boost)
 target_link_libraries(tiles Boost::boost)
 
+# Week 7
+
+add_executable(bistro Week7/Bistro/src/main.cpp)
+add_executable(germs Week7/Germs/src/main.cpp)
+add_executable(h1n1 Week7/H1N1/src/main.cpp)
+add_executable(golden_eye Week7/GoldenEye/src/main.cpp)
+
+target_link_libraries(bistro CGAL::CGAL)
+target_link_libraries(germs CGAL::CGAL)
+target_link_libraries(h1n1 CGAL::CGAL)
+target_link_libraries(golden_eye CGAL::CGAL)
+target_link_libraries(golden_eye Boost::boost)
+
 
 # Problems Of The Week
 
@@ -87,9 +101,11 @@ add_executable(planet_express ProblemOfTheWeek/PlanetExpress/src/main.cpp)
 add_executable(motorcycles ProblemOfTheWeek/Motorcycles/src/main.cpp)
 add_executable(octopussy ProblemOfTheWeek/Octopussy/src/main.cpp)
 add_executable(octopussy_alternative ProblemOfTheWeek/Octopussy/src/main_fromleaves.cpp)
+add_executable(kingdom_defense ProblemOfTheWeek/KingdomDefense/src/main.cpp)
 
 target_link_libraries(motorcycles CGAL::CGAL)
 target_link_libraries(planet_express Boost::boost)
+target_link_libraries(kingdom_defense Boost::boost)
 
 
 
