@@ -76,6 +76,7 @@ target_link_libraries(knights Boost::boost)
 target_link_libraries(london Boost::boost)
 target_link_libraries(tiles Boost::boost)
 
+
 # Week 7
 
 add_executable(bistro Week7/Bistro/src/main.cpp)
@@ -88,6 +89,19 @@ target_link_libraries(germs CGAL::CGAL)
 target_link_libraries(h1n1 CGAL::CGAL)
 target_link_libraries(golden_eye CGAL::CGAL)
 target_link_libraries(golden_eye Boost::boost)
+
+
+# Week 8
+
+add_executable(what_is_the_maximum Week8/WhatIsTheMaximum/src/main.cpp)
+add_executable(diet Week8/Diet/src/main.cpp)
+add_executable(inball Week8/Inball/src/main.cpp)
+add_executable(suez Week8/Suez/src/main.cpp)
+
+target_link_libraries(what_is_the_maximum CGAL::CGAL)
+target_link_libraries(diet CGAL::CGAL)
+target_link_libraries(inball CGAL::CGAL)
+target_link_libraries(suez CGAL::CGAL)
 
 
 # Problems Of The Week

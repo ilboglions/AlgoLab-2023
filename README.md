@@ -44,6 +44,11 @@ make
 | [H1N1](Week7/H1N1/this.pdf)                                       | [H1N1](Week7/H1N1/src/main.cpp)                                       |  100  |  7   |
 | [Golden Eye](Week7/GoldenEye/this.pdf)                            | [Golden Eye](Week7/GoldenEye/src/main.cpp)                            |  100  |  7   |
 | [Kingdom Defense](ProblemOfTheWeek/KingdomDefense/kingdom_defence.pdf)| [Kingdom Defense](ProblemOfTheWeek/KingdomDefense/src/main.cpp)   |  100  |POTW 8|
+| [What Is The Maxmimum](Week8/WhatIsTheMaximum/this.pdf)           | [What Is The Maximum](Week8/WhatIsTheMaximum/src/main.cpp)            |  100  |  8   |
+| [Diet](Week8/Diet/this.pdf)                                       | [Diet](Week8/Diet/src/main.cpp)                                       |  100  |  8   |
+| [Inball](Week8/Inball/this.pdf)                                   | [Inball](Week8/Inball/src/main.cpp)                                   |  100  |  8   |
+| [Suez](Week8/Suez/this.pdf)                                       | [Suez](Week8/Suez/src/main.cpp)                                       |  100  |  8   |
+
 
 
 
