@@ -48,6 +48,11 @@ make
 | [Diet](Week8/Diet/this.pdf)                                       | [Diet](Week8/Diet/src/main.cpp)                                       |  100  |  8   |
 | [Inball](Week8/Inball/this.pdf)                                   | [Inball](Week8/Inball/src/main.cpp)                                   |  100  |  8   |
 | [Suez](Week8/Suez/this.pdf)                                       | [Suez](Week8/Suez/src/main.cpp)                                       |  100  |  8   |
+| [Idefix](ProblemOfTheWeek/Idefix/this.pdf)                        | [Idefix](ProblemOfTheWeek/Idefix/src/main.cpp)                        |  100  |POTW 9|
+| [Canteen](Week9/Canteen/canteen.pdf)                              | [Canteen](Week9/Canteen/src/main.cpp)                                 |  100  |  9   |
+| [Placing Knights](Week9/PlacingKnights/placing_knights.pdf)       | [Placing Knights](Week9/PlacingKnights/src/main.cpp)                  |  100  |  9   |
+| [Real Estate Market](Week9/RealEstateMarket/real_estate.pdf)      | [Real Estate Market](Week9/RealEstateMarket/src/main.cpp)             |  100  |  9   |
+| [Algocoon](Week9/Algocoon/algocoon.pdf)                           | [Algocoon](Week9/Algocoon/src/main.cpp)                               |  100  |  9   |
 
 
 

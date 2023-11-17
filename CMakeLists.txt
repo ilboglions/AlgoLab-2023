@@ -104,6 +104,19 @@ target_link_libraries(inball CGAL::CGAL)
 target_link_libraries(suez CGAL::CGAL)
 
 
+# Week 9
+
+add_executable(canteen Week9/Canteen/src/main.cpp)
+add_executable(placing_knights Week9/PlacingKnights/src/main.cpp)
+add_executable(real_estate_market Week9/RealEstateMarket/src/main.cpp)
+add_executable(algocoon Week9/Algocoon/src/main.cpp)
+
+target_link_libraries(canteen Boost::boost)
+target_link_libraries(placing_knights Boost::boost)
+target_link_libraries(real_estate_market Boost::boost)
+target_link_libraries(algocoon Boost::boost)
+
+
 # Problems Of The Week
 
 add_executable(deck_of_cards ProblemOfTheWeek/DeckOfCards/src/main.cpp)
@@ -114,10 +127,13 @@ add_executable(motorcycles ProblemOfTheWeek/Motorcycles/src/main.cpp)
 add_executable(octopussy ProblemOfTheWeek/Octopussy/src/main.cpp)
 add_executable(octopussy_alternative ProblemOfTheWeek/Octopussy/src/main_fromleaves.cpp)
 add_executable(kingdom_defense ProblemOfTheWeek/KingdomDefense/src/main.cpp)
+add_executable(idefix ProblemOfTheWeek/Idefix/src/main.cpp)
 
 target_link_libraries(motorcycles CGAL::CGAL)
 target_link_libraries(planet_express Boost::boost)
 target_link_libraries(kingdom_defense Boost::boost)
+target_link_libraries(idefix CGAL::CGAL)
+target_link_libraries(idefix Boost::boost)
 
 
 
