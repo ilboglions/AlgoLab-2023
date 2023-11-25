@@ -54,6 +54,11 @@ make
 | [Real Estate Market](Week9/RealEstateMarket/real_estate.pdf)      | [Real Estate Market](Week9/RealEstateMarket/src/main.cpp)             |  100  |  9    |
 | [Algocoon](Week9/Algocoon/algocoon.pdf)                           | [Algocoon](Week9/Algocoon/src/main.cpp)                               |  100  |  9    |
 | [Lannister](ProblemOfTheWeek/Lannister/this.pdf)                  | [Lannister](ProblemOfTheWeek/Lannister/src/main.cpp)                  |  100  |POTW 10|
+| [San Francisco](Week10/SanFrancisco/san_francisco.pdf)            | [San Francisco](Week10/SanFrancisco/src/main.cpp)                     |  100  |  10   |
+| [Surveillance Photograph](Week10/SurveillancePhotograph/this.pdf) | [Surveillance Photograph](Week10/SurveillancePhotograph/src/main.cpp) |  100  |  10   |
+| [Rubeus Hagrid](Week10/RubeusHagrid/rubeus_hagrid.pdf)            | [Rubeus Hagrid](Week10/RubeusHagrid/src/main.cpp)                     |  100  |  10   |
+| [Clues](Week10/Clues/this.pdf)                                    | [Clues](Week10/Clues/src/main.cpp)                                    |  100  |  10   |
+
 
 
 

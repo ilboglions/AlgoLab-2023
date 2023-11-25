@@ -117,6 +117,18 @@ target_link_libraries(real_estate_market Boost::boost)
 target_link_libraries(algocoon Boost::boost)
 
 
+# Week 10
+
+add_executable(san_francisco Week10/SanFrancisco/src/main.cpp)
+add_executable(surveillance_photograph Week10/SurveillancePhotograph/src/main.cpp)
+add_executable(rubeus_hagrid Week10/RubeusHagrid/src/main.cpp)
+add_executable(clues Week10/Clues/src/main.cpp)
+
+target_link_libraries(surveillance_photograph Boost::boost)
+target_link_libraries(clues Boost::boost)
+target_link_libraries(clues CGAL::CGAL)
+
+
 # Problems Of The Week
 
 add_executable(deck_of_cards ProblemOfTheWeek/DeckOfCards/src/main.cpp)
