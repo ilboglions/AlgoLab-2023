@@ -26,47 +26,30 @@ typedef boost::disjoint_sets_with_storage<> Union_find;
 bool connections_compare(const connection & a, const connection & b){
     return a.first < b.first;
 }
-void components_builder(const vector<connection> & edges, Union_find & uf, const long & max){
-    Index c1,c2;
-    for( connection c: edges){
-        if(c.first > max){
-            break;
-        }
-        c1 = uf.find_set(c.second.first->info());
-        c2 = uf.find_set(c.second.second->info());
-        if(c1 != c2){
-            uf.link(c1, c2); 
-        }
-    }
-}
 long squared_distance(const P & p1, const P & p2){
     return ((p1.x()-p2.x())*(p1.x()-p2.x())) + ((p1.y()-p2.y())*(p1.y()-p2.y()));
 }
-long findsolution (int & n, vector<connection>& edges, vector< pair<Vertex_handle,Vertex_handle> >& missions,const int & missionsresult, vector<long> & missionsdistances, const long maxdistance){
-    
+void components_builder(const vector<connection> & edges, Union_find & uf, const long & max){
+    Index c1,c2;
+    for( connection c: edges){
+        if(c.first > max)
+            break;
+        c1 = uf.find_set(c.second.first->info());
+        c2 = uf.find_set(c.second.second->info());
+        if(c1 != c2) uf.link(c1, c2); 
+    }
+}
+long findsolution (int & n, vector<connection>& edges, vector< pair<Vertex_handle,Vertex_handle> >& missions,const int & missionsresult, const vector<long> & missionsdistances, const vector<long> & distances, const long maxdistance){
     Index c1,c2;
     int m = missions.size();
     int mid;
-    long power_required, minPower;
+    long power_required, minPower=0;
     int missions_temp;
-    minPower = 0;
     int start = 0;
-    int end = edges.size()-1;
+    int end = distances.size()-1;
     missions_temp=0;
-    Union_find uf_temp(n);
-    components_builder(edges, uf_temp, maxdistance);
-    for(int i=0; i < m; i++){
-        c1 = uf_temp.find_set(missions[i].first->info());
-        c2 = uf_temp.find_set(missions[i].second->info());
-        if(c1 == c2 && missionsdistances[i] <= maxdistance){
-            missions_temp++;
-        }
-    }
-    if(missionsresult <= missions_temp){
-        return maxdistance;
-    }
     for(int i=0; i <= end; i++){
-        if(edges[i].first >= maxdistance){
+        if(distances[i] >= maxdistance){
             start = i;
             break;
         }
@@ -74,8 +57,8 @@ long findsolution (int & n, vector<connection>& edges, vector< pair<Vertex_handl
     while(start <= end){
         missions_temp=0;
         mid = (start+end)/2;
-        uf_temp = Union_find(n);
-        power_required = edges[mid].first;
+        Union_find uf_temp = Union_find(n);
+        power_required = distances[mid];
         components_builder(edges, uf_temp, power_required);
         for(int i=0; i < m; i++){
             c1 = uf_temp.find_set(missions[i].first->info());
@@ -97,10 +80,10 @@ void solve(){
     int m,n;
     long p;
     std::cin>>n>>m>>p;
-
     vector<IPoint> points(n);
     vector< pair<Vertex_handle,Vertex_handle> > missions(m);
     vector <long> missionsdistances(m);
+    vector <long> distances; distances.push_back(0);
     long maxdistance=0;
     int missionsresult=0;
     long power_required;
@@ -125,16 +108,19 @@ void solve(){
         v1 = t.nearest_vertex(p1);
         v2 = t.nearest_vertex(p2);
         missions[i] = std::make_pair(v1, v2);
-        missionsdistances[i] = std::max( squared_distance(p1, v1->point())*4, squared_distance(p2, v2->point())*4 );
+        missionsdistances[i] = std::max( squared_distance(p1, v1->point())*4, squared_distance(p2, v2->point())*4);
+        distances.push_back(missionsdistances[i]);
         maxdistance = std::max(maxdistance, missionsdistances[i]);
     }
     for(Edge e : t.finite_edges()){
         v1 = e.first->vertex((e.second + 1) % 3);
         v2 = e.first->vertex((e.second + 2) % 3);
         power_required = squared_distance(v1->point(), v2->point());
+        distances.push_back(power_required);
         edges_lengths.push_back( make_pair(power_required, make_pair(v1, v2)));
     }
     std::sort(edges_lengths.begin(), edges_lengths.end(), connections_compare);
+    std::sort(distances.begin(), distances.end());
     components_builder(edges_lengths, uf, p);
     long max_set_distance = 0;
     for(int i=0; i < m; i++){
@@ -149,11 +135,10 @@ void solve(){
             std::cout<<"n";
         }
     }
-
     std::cout<<"\n";
-    long minPower = findsolution(n,edges_lengths, missions, m, missionsdistances, maxdistance);
+    long minPower = findsolution(n,edges_lengths, missions, m, missionsdistances, distances ,maxdistance);
     std::cout<<minPower<<"\n";
-    minPower = findsolution(n, edges_lengths, missions, missionsresult, missionsdistances, max_set_distance);
+    minPower = findsolution(n, edges_lengths, missions, missionsresult, missionsdistances, distances , max_set_distance);
     std::cout<<minPower<<"\n";
 }
 int main(){
