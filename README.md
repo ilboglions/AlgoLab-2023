@@ -58,6 +58,7 @@ make
 | [Surveillance Photograph](Week10/SurveillancePhotograph/this.pdf) | [Surveillance Photograph](Week10/SurveillancePhotograph/src/main.cpp) |  100  |  10   |
 | [Rubeus Hagrid](Week10/RubeusHagrid/rubeus_hagrid.pdf)            | [Rubeus Hagrid](Week10/RubeusHagrid/src/main.cpp)                     |  100  |  10   |
 | [Clues](Week10/Clues/this.pdf)                                    | [Clues](Week10/Clues/src/main.cpp)                                    |  100  |  10   |
+| [India](ProblemOfTheWeek/India/india.pdf)                         | [India](ProblemOfTheWeek/India/src/main.cpp)                          |  100  |POTW 11|
 
 
 

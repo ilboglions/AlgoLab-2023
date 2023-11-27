@@ -141,6 +141,7 @@ add_executable(octopussy_alternative ProblemOfTheWeek/Octopussy/src/main_fromlea
 add_executable(kingdom_defense ProblemOfTheWeek/KingdomDefense/src/main.cpp)
 add_executable(idefix ProblemOfTheWeek/Idefix/src/main.cpp)
 add_executable(lannister ProblemOfTheWeek/Lannister/src/main.cpp)
+add_executable(india ProblemOfTheWeek/India/src/main.cpp)
 
 target_link_libraries(motorcycles CGAL::CGAL)
 target_link_libraries(planet_express Boost::boost)
@@ -148,6 +149,7 @@ target_link_libraries(kingdom_defense Boost::boost)
 target_link_libraries(idefix CGAL::CGAL)
 target_link_libraries(idefix Boost::boost)
 target_link_libraries(lannister CGAL::CGAL)
+target_link_libraries(india Boost::boost)
 
 
 
