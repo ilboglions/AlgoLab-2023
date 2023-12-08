@@ -59,6 +59,15 @@ make
 | [Rubeus Hagrid](Week10/RubeusHagrid/rubeus_hagrid.pdf)            | [Rubeus Hagrid](Week10/RubeusHagrid/src/main.cpp)                     |  100  |  10   |
 | [Clues](Week10/Clues/this.pdf)                                    | [Clues](Week10/Clues/src/main.cpp)                                    |  100  |  10   |
 | [India](ProblemOfTheWeek/India/india.pdf)                         | [India](ProblemOfTheWeek/India/src/main.cpp)                          |  100  |POTW 11|
+| [Asterix And The Chariot Race](Week11/AsterixAndTheChariotRace/asterix_and_the_chariot_race.pdf) | [Asterix And The Chariot Race](Week11/AsterixAndTheChariotRace/src/main.cpp) | 100 |  11  |
+| [Dean Thomas](Week11/DeanThomas/this.pdf)                         | [Dean Thomas](Week11/DeanThomas/src/main.cpp)                         |  100  |  11   |
+| [Legions](Week11/Legions/this.pdf)                                | [Legions](Week11/Legions/src/main.cpp)                                |  100  |  11   |
+| [Phantom Menace](Week11/PhantomMenace/this.pdf)                   | [Phantom Menace](Week11/PhantomMenace/src/main.cpp)                   |  100  |  11   |
+| [Pied Piper](ProblemOfTheWeek/PiedPiper/this.pdf)                 | [Pied Piper](ProblemOfTheWeek/PiedPiper/src/main.cpp)                 | TO DO |POTW 12|
+| [New York](Week12/NewYork/this.pdf)                               | [New York](Week12/NewYork/src/main.cpp)                               |  100  |  12   |
+| [Return Of The Jedi](Week12/ReturnOfTheJedi/this.pdf)             | [Problem Of The Jedi](Week12/ReturnOfTheJedi/src/main.cpp)            |  100  |  12   |
+| [Rumpelstitskin](Week12/Rumpelstitskin/this.pdf)                  | [Rumpelstitskin](Week12/Rumpelstitskin/src/main.cpp)                  |  100  |  12   |
+
 
 
 

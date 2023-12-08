@@ -44,7 +44,7 @@ void solve(const int n){
         std::cout<<"No such diet.\n";
     else{
         CGAL::Quotient<ET> res = s.objective_value();
-        int result = (int)std::floor(CGAL::to_double((res.numerator()/res.denominator())));
+        int result = (int)std::floor(-CGAL::to_double((res.numerator()/res.denominator())));
         std::cout<<result<<"\n";
     }
 }

@@ -129,6 +129,28 @@ target_link_libraries(clues Boost::boost)
 target_link_libraries(clues CGAL::CGAL)
 
 
+# Week 11
+
+add_executable(asterix_and_the_chariot_race Week11/AsterixAndTheChariotRace/src/main.cpp)
+add_executable(dean_thomas Week11/DeanThomas/src/main.cpp)
+add_executable(legions Week11/Legions/src/main.cpp)
+add_executable(phantom_menace Week11/PhantomMenace/src/main.cpp)
+
+target_link_libraries(dean_thomas CGAL::CGAL)
+target_link_libraries(legions CGAL::CGAL)
+target_link_libraries(phantom_menace Boost::boost)
+
+
+# Week 12
+
+add_executable(new_york Week12/NewYork/src/main.cpp)
+add_executable(return_of_the_jedi Week12/ReturnOfTheJedi/src/main.cpp)
+add_executable(rumpelstitskin Week12/Rumpelstitskin/src/main.cpp)
+
+target_link_libraries(return_of_the_jedi Boost::boost)
+target_link_libraries(rumpelstitskin Boost::boost)
+
+
 # Problems Of The Week
 
 add_executable(deck_of_cards ProblemOfTheWeek/DeckOfCards/src/main.cpp)
