@@ -146,9 +146,11 @@ target_link_libraries(phantom_menace Boost::boost)
 add_executable(new_york Week12/NewYork/src/main.cpp)
 add_executable(return_of_the_jedi Week12/ReturnOfTheJedi/src/main.cpp)
 add_executable(rumpelstitskin Week12/Rumpelstitskin/src/main.cpp)
+add_executable(world_cup Week12/WorldCup/src/main.cpp)
 
 target_link_libraries(return_of_the_jedi Boost::boost)
 target_link_libraries(rumpelstitskin Boost::boost)
+target_link_libraries(world_cup CGAL::CGAL)
 
 
 # Problems Of The Week
