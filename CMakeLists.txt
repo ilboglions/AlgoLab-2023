@@ -167,6 +167,8 @@ add_executable(idefix ProblemOfTheWeek/Idefix/src/main.cpp)
 add_executable(lannister ProblemOfTheWeek/Lannister/src/main.cpp)
 add_executable(india ProblemOfTheWeek/India/src/main.cpp)
 
+add_executable(schneewittchen ProblemOfTheWeek/Schneewittchen/src/main.cpp)
+
 target_link_libraries(motorcycles CGAL::CGAL)
 target_link_libraries(planet_express Boost::boost)
 target_link_libraries(kingdom_defense Boost::boost)
@@ -174,7 +176,7 @@ target_link_libraries(idefix CGAL::CGAL)
 target_link_libraries(idefix Boost::boost)
 target_link_libraries(lannister CGAL::CGAL)
 target_link_libraries(india Boost::boost)
-
+target_link_libraries(schneewittchen CGAL::CGAL)
 
 
 
