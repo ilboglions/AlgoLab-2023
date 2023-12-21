@@ -158,7 +158,7 @@ target_link_libraries(world_cup CGAL::CGAL)
 add_executable(augean_stables Week13/AugeanStables/src/main.cpp)
 add_executable(casino_royale Week13/CasinoRoyale/src/main.cpp)
 add_executable(dhl Week13/DHL/src/main.cpp)
-# add_executable(dhl Week13/FightingPitsOfMereen/src/main.cpp)
+add_executable(dhl Week13/FightingPitsOfMereen/src/main.cpp)
 
 target_link_libraries(augean_stables CGAL::CGAL)
 target_link_libraries(casino_royale Boost::boost)
