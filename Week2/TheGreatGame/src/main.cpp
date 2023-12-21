@@ -1,58 +1,38 @@
 #include <iostream>
 #include <vector>
-#include <limits.h>
-
-
-using std::vector;
-void solve();
-
-int main(){
-    std::ios_base::sync_with_stdio(false);
-
-    int t;
-    std::cin>>t;
-    while(t--){
-        solve();
-    }
-}
+#include <climits>
+using namespace std;
 
 void solve(){
-    int n,m;
-    int x,y;
-    std::cin>>n>>m;
-    vector<vector<int> > matrix(n);
-    int r,b;
-    std::cin>>r>>b;
-    r--;
-    b--;
-    for(int tmp=0; tmp < m; tmp++){
-        std::cin>>x>>y;
-        matrix[x-1].push_back(y-1);
-    } 
-
-    vector<int> evendistance(n, INT_MAX);
-    vector<int> odddistance(n, -1);
-    evendistance[n-1]= 0;
-    odddistance[n-1]=0;
+    int n,m; cin>>n>>m;
+    int r,b; cin>>r>>b; r--; b--;
+    int u,v;
+    vector < vector<int> > transitions(n);
+    for(int i=0; i < m; i++){
+        cin>>u>>v; transitions[u-1].push_back(v-1);
+    }
+    vector<int> even_distance(n, INT_MAX);
+    vector<int> odd_distance(n, -1);
+    even_distance[n-1] = 0; odd_distance[n-1] = 0;
     for(int i=n-2; i >= 0; i--){
-        for(int j: matrix[i]){
-            if(evendistance[i] > odddistance[j]+1)
-                evendistance[i] = odddistance[j]+1;
-            if(odddistance[i] < evendistance[j]+1)
-                odddistance[i] = evendistance[j]+1;         
+        for(next: transitions[i]){
+            even_distance[i] = min(even_distance[i], odd_distance[next] + 1);
+            odd_distance[i] = max(odd_distance[i], even_distance[next] + 1);
         }
-    }    
-    if(evendistance[b] < evendistance[r]){
-        std::cout<<1<<"\n";
     }
-    else if(evendistance[b] > evendistance[r]){
-        std::cout<<0<<"\n";
+    if(even_distance[r] < even_distance[b] || (even_distance[r]==even_distance[b] && even_distance[r] % 2)){
+        cout<<"0\n";
     }
-    else if(evendistance[b]==evendistance[r] && evendistance[b]%2){
-        std::cout<<0<<"\n";
+    else (even_distance[r] > even_distance[b]){
+        cout<<"1\n";
     }
-    else{
-        std::cout<<1<<"\n";
-    }
+    
+}
 
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t; cin>>t;
+    while(t--) solve();
 }
