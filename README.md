@@ -63,12 +63,17 @@ make
 | [Dean Thomas](Week11/DeanThomas/this.pdf)                         | [Dean Thomas](Week11/DeanThomas/src/main.cpp)                         |  100  |  11   |
 | [Legions](Week11/Legions/this.pdf)                                | [Legions](Week11/Legions/src/main.cpp)                                |  100  |  11   |
 | [Phantom Menace](Week11/PhantomMenace/this.pdf)                   | [Phantom Menace](Week11/PhantomMenace/src/main.cpp)                   |  100  |  11   |
-| [Pied Piper](ProblemOfTheWeek/PiedPiper/this.pdf)                 | [Pied Piper](ProblemOfTheWeek/PiedPiper/src/main.cpp)                 | TO DO |POTW 12|
+| [Pied Piper](ProblemOfTheWeek/PiedPiper/this.pdf)                 | [Pied Piper](ProblemOfTheWeek/PiedPiper/src/main.cpp)                 |  100  |POTW 12|
 | [New York](Week12/NewYork/this.pdf)                               | [New York](Week12/NewYork/src/main.cpp)                               |  100  |  12   |
 | [Return Of The Jedi](Week12/ReturnOfTheJedi/this.pdf)             | [Problem Of The Jedi](Week12/ReturnOfTheJedi/src/main.cpp)            |  100  |  12   |
 | [Rumpelstitskin](Week12/Rumpelstitskin/this.pdf)                  | [Rumpelstitskin](Week12/Rumpelstitskin/src/main.cpp)                  |  100  |  12   |
 | [World Cup](Week12/WorldCup/this.pdf)                             | [World Cup](Week12/WorldCup/src/main.cpp)                             |  100  |  12   |
 | [Schneewittchen](ProblemOfTheWeek/Schneewittchen/this.pdf)        | [Schneewittchen](ProblemOfTheWeek/Schneewittchen/src/main.cpp)        |  100  |POTW 13|
+| [Augean Stables](Week13/AugeanStables/this.pdf)                   | [Augean Stables](Week13/AugeanStables/src/main.cpp)                   |  100  |  13   |
+| [Casino Royale](Week13/CasinoRoyale/this.pdf)                     | [Casino Royale](Week13/CasinoRoyale/src/main.cpp)                     |  100  |  13   |
+| [DHL](Week13/DHL/this.pdf)                                        | [DHL](Week13/DHL/src/main.cpp)                                        |  100  |  13   |
+| [Fighting Pits Of Mereen](Week13/FightingPitsOfMereen/this.pdf)   | [Fighting Pits of Mereen](Week13/FightingPitsOfMereen/src/main.cpp)   |  TODO |  13   |
+| [On Her Majesty's Secret Service](ProblemOfTheWeek/OnHerMajestysSecretService/this.pdf)   | [On Her Majesty's Secret Service](ProblemOfTheWeek/OnHerMajestysSecretService/src/main.cpp)   | 100 |POTW 14|
 
 
 

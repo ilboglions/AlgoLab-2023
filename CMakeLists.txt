@@ -153,6 +153,17 @@ target_link_libraries(rumpelstitskin Boost::boost)
 target_link_libraries(world_cup CGAL::CGAL)
 
 
+# Week 12
+
+add_executable(augean_stables Week13/AugeanStables/src/main.cpp)
+add_executable(casino_royale Week13/CasinoRoyale/src/main.cpp)
+add_executable(dhl Week13/DHL/src/main.cpp)
+# add_executable(dhl Week13/FightingPitsOfMereen/src/main.cpp)
+
+target_link_libraries(augean_stables CGAL::CGAL)
+target_link_libraries(casino_royale Boost::boost)
+
+
 # Problems Of The Week
 
 add_executable(deck_of_cards ProblemOfTheWeek/DeckOfCards/src/main.cpp)
@@ -166,8 +177,9 @@ add_executable(kingdom_defense ProblemOfTheWeek/KingdomDefense/src/main.cpp)
 add_executable(idefix ProblemOfTheWeek/Idefix/src/main.cpp)
 add_executable(lannister ProblemOfTheWeek/Lannister/src/main.cpp)
 add_executable(india ProblemOfTheWeek/India/src/main.cpp)
-
+add_executable(pied_piper ProblemOfTheWeek/PiedPiper/src/main.cpp)
 add_executable(schneewittchen ProblemOfTheWeek/Schneewittchen/src/main.cpp)
+add_executable(on_her_majestys_secret_service ProblemOfTheWeek/OnHerMajestysSecretService/src/main.cpp)
 
 target_link_libraries(motorcycles CGAL::CGAL)
 target_link_libraries(planet_express Boost::boost)
@@ -177,6 +189,7 @@ target_link_libraries(idefix Boost::boost)
 target_link_libraries(lannister CGAL::CGAL)
 target_link_libraries(india Boost::boost)
 target_link_libraries(schneewittchen CGAL::CGAL)
+target_link_libraries(on_her_majestys_secret_service Boost::boost)
 
 
 
