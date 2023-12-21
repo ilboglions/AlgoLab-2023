@@ -72,7 +72,7 @@ make
 | [Augean Stables](Week13/AugeanStables/this.pdf)                   | [Augean Stables](Week13/AugeanStables/src/main.cpp)                   |  100  |  13   |
 | [Casino Royale](Week13/CasinoRoyale/this.pdf)                     | [Casino Royale](Week13/CasinoRoyale/src/main.cpp)                     |  100  |  13   |
 | [DHL](Week13/DHL/this.pdf)                                        | [DHL](Week13/DHL/src/main.cpp)                                        |  100  |  13   |
-| [Fighting Pits Of Mereen](Week13/FightingPitsOfMereen/this.pdf)   | [Fighting Pits of Mereen](Week13/FightingPitsOfMereen/src/main.cpp)   |  TODO |  13   |
+| [Fighting Pits Of Mereen](Week13/FightingPitsOfMereen/this.pdf)   | [Fighting Pits of Mereen](Week13/FightingPitsOfMereen/src/main.cpp)   |  100  |  13   |
 | [On Her Majesty's Secret Service](ProblemOfTheWeek/OnHerMajestysSecretService/this.pdf)   | [On Her Majesty's Secret Service](ProblemOfTheWeek/OnHerMajestysSecretService/src/main.cpp)   | 100 |POTW 14|
 
 
