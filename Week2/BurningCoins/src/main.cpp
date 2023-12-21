@@ -1,46 +1,36 @@
 #include <iostream>
 #include <vector>
-using std::vector;
-int findbest( vector<int> &, vector<vector<int> > & , int ,int);
-void solve();
+#include <climits>
+using namespace std;
 
-int main(){
-    std::ios_base::sync_with_stdio(false);
-    int t;
-    std::cin>>t;
-    while(t--){
-        solve();
-    }
+void compute_value(vector<vector<int> > & dp,  vector<int> & coins ,int left, int right, int n){
+  if(dp[left][right] != -1){
+    return;
+  }
+  if(right - left <= 1){
+    dp[left][right] = max(coins[left], coins[right]);
+    return;
+  }
+  compute_value(dp, coins, left+2, right, n);
+  compute_value(dp, coins, left, right-2, n);
+  compute_value(dp, coins, left+1, right-1, n);
+  int minleft = min(dp[left+1][right-1], dp[left+2][right]);
+  int minright = min(dp[left+1][right-1], dp[left][right-2]);
+  dp[left][right] = max(minleft + coins[left], minright + coins[right]);
 }
 
 void solve(){
-    int n;
-    std::cin>>n;
-    vector<int> coins(n);
-    for(int i=0; i < n;i++){
-        std::cin>>coins[i];
-    }
-    vector< vector <int> > mem (n, vector<int>(n,-1));
-
-    int res = findbest(coins, mem, 0, n-1);
-    std::cout<<res<<"\n";
+  int n; cin>>n;
+  vector <int> coins(n);
+  for(int i=0; i < n; i++) cin >>coins[i];
+  vector < vector <int> > dp(n, vector<int>(n, -1));
+  compute_value(dp, coins, 0, n-1, n);
+  cout<<dp[0][n-1]<<"\n";  
 }
 
-
-int findbest( vector<int> &coins, vector<vector<int> > &mem , int left,int right){
-    if(mem[left][right]==-1){
-        if(left==right){
-            mem[left][right] = coins[left];
-        }
-        else if(left+1 == right){
-            mem[left][right] = std::max(coins[left],coins[right]);
-        }
-        else{
-            int minleft, minright;
-            minleft = std::min( findbest(coins, mem, left+2, right),findbest(coins,mem, left+1, right-1));
-            minright = std::min(findbest(coins, mem, left, right-2),findbest(coins,mem, left+1, right-1));
-            mem[left][right] = std::max(coins[left]+ minleft, coins[right] + minright);    
-        }
-    }
-    return mem[left][right];
+int main(){
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  int t; cin>>t;
+  while(t--) solve();
 }
