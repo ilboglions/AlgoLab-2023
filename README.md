@@ -9,11 +9,11 @@ make
 
 | Problem                                                           | Solution                                                              | Score | Week  |
 | --------------                                                    | --------------------------------------------------                    |-------|-------|
-| Dominoes                                                          | [Dominoes](Week1/Dominoes/src/main.cpp)                              |  100  |  1    |
-| Even Pairs                                                        | [Even Pairs](Week1/EvenPairs/src/main.cpp)                           |  100  |  1    |
-| Even Matrices                                                     | [Even Matrices](Week1/EvenMatrices/src/main.cpp )                    |  100  |  1    |
-| Build The Sum                                                     | [Build the Sum](Week1/BuildTheSum/src/main.cpp)                      |  100  |  1    |
-| Deck Of Cards                                                     | [Deck Of Cards](ProblemOfTheWeek/DeckOfCards/src/main.cpp)            |  100  |POTW 2 |
+| [Dominoes](Week1/Dominoes/this.pdf)                               | [Dominoes](Week1/Dominoes/src/main.cpp)                              |  100  |  1    |
+| [Even Pairs](Week1/EvenPairs/this.pdf)                            | [Even Pairs](Week1/EvenPairs/src/main.cpp)                           |  100  |  1    |
+| [Even Matrices](Week1/EvenMatrices/this.pdf)                      | [Even Matrices](Week1/EvenMatrices/src/main.cpp )                    |  100  |  1    |
+| [Build The Sum](Week1/BuildTheSum/this.pdf)                       | [Build the Sum](Week1/BuildTheSum/src/main.cpp)                      |  100  |  1    |
+| [Deck Of Cards](ProblemOfTheWeek/DeckOfCards/this.pdf)            | [Deck Of Cards](ProblemOfTheWeek/DeckOfCards/src/main.cpp)            |  100  |POTW 2 |
 | [The Great Game](Week2/TheGreatGame/great_game.pdf)               | [The Great Game](Week2/TheGreatGame/src/main.cpp)                     |  100  |  2    |
 | [Burning Coins](Week2/BurningCoins/burning_coins.pdf)             | [Burning Coins](Week2/BurningCoins/src/main.cpp)                      |  100  |  2    |
 | [Beach Bars](Week2/BeachBars/beach_bars.pdf)                      | [Beach Bars](Week2/BeachBars/src/main.cpp)                            |  100  |  2    |
