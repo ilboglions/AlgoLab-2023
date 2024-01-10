@@ -102,7 +102,8 @@ void solve(){
     }
   }
   long maximum = -1;
-  for(long j=max((long)0,n/2-MAXDIFFERENCE); j <= n; j++){ //ELEMENTS ASSIGNED TO NORTH
+  long lim = min(n,n/2 + MAXDIFFERENCE);
+  for(long j=max((long)0,n/2-MAXDIFFERENCE); j <= lim; j++){ //ELEMENTS ASSIGNED TO NORTH
     for(long l=0; l <= k; l++){ //LAST NORTH
       for(long o=0; o <= k; o++){ //LAST SOUTH
         for(long p=0; p <= k; p++){ //BEFORE NORTH
@@ -110,7 +111,6 @@ void solve(){
             current = build_state(j, n-j , l, p, o , q);
             auto finder = dp.find(current);
             if(finder != dp.end()){
-
               maximum  =  max(maximum, finder->second);
             }
           }
