@@ -1,85 +1,50 @@
 #include <iostream>
 #include <vector>
-#include <utility>
-using std::vector;
-using std::pair;
-
-void solve();
-
-int findbest(vector<vector<int> > &,  vector<int> &, int, int );
+using namespace std;
+void solve(){
+    int n,m,k; cin>>n>>m>>k;
+    vector<int> horcruxes(n+1);
+    int tmp;
+    horcruxes[0]=0;
+    for(int i=1; i<=n; i++){
+        cin>>tmp;  horcruxes[i] = tmp+horcruxes[i-1];
+    }
+    vector< vector<int> > dp(m+1, vector<int> (n+1, 0));
+    vector<int> previous(n+1);
+    int left=0;
+    int right = 1;
+    int last=0;
+    while(right <= n){
+        while(left < (right-1) && horcruxes[right] - horcruxes[left] > k)
+            left++;
+        if(horcruxes[right] - horcruxes[left] == k){
+            dp[0][right] = right - left;
+            last = right;
+        }
+        previous[right] = last;
+        right++;
+    }
+    for(int i=0; i<= m; i++) dp[i][0]=0;
+    for(int i=1; i<=n; i++){
+        dp[1][i] = max(dp[1][i-1], dp[0][previous[i]]);
+    }
+    for(int i=2; i <= m; i++){
+        for(int j=1; j <= n; j++){
+            if(previous[j] == j && (j - dp[0][j]) > 0 && dp[i-1][j - dp[0][j]] != 0)
+                dp[i][j]= max(dp[i][j-1], dp[0][j] + dp[i-1][j - dp[0][j]]);
+            else
+                dp[i][j] = dp[i][j-1];
+        }
+    }
+    if(dp[m][n] == 0)
+        cout<<"fail\n";
+    else
+        cout<<dp[m][n]<<"\n";
+}
 
 int main(){
-    std::ios_base::sync_with_stdio(false);
-    int t;
-    std::cin>>t;
-    while(t--){
-        solve();
-    }
-}
-
-
-void solve(){
-    int n,m,k;
-    int res;
-    int tmp;
-    int leftpos, rightpos;
-    std::cin>>n>>m>>k;
-    vector<int> cumsum(n+1, 0);
-    vector<int>  pos(n,0);
-    vector<vector<int> > mem(m,vector<int>(n,-1));
-    cumsum[0] = 0;
-    for(int i=1; i <= n; i++){
-        std::cin>>tmp;
-        cumsum[i] = cumsum[i-1]+tmp;
-    }
-    leftpos=0;
-    rightpos=1;
-    while(rightpos <= n){
-        if(leftpos < rightpos && cumsum[rightpos]-cumsum[leftpos] > k){
-            leftpos++;
-        }
-        else if(rightpos < n && cumsum[rightpos]-cumsum[leftpos] < k){
-            rightpos++;
-            }   
-        else if(cumsum[rightpos] - cumsum[leftpos] == k){
-            pos[rightpos-1] = rightpos-leftpos;
-            leftpos++;
-            rightpos++;
-            }
-        else{
-            rightpos++;
-            }
-    }
-    mem[0][0] = pos[0];
-    res = findbest(mem, pos, n-1, m-1);
-    if(res){
-        std::cout<<res<<"\n";
-    }
-    else{
-        std::cout<<"fail"<<"\n";
-    }
-}
-
-int findbest(vector<vector<int> > &mem, vector< int > &pos,int rightlim, int level){
-    int previous;
-    if(mem[level][rightlim] == -1){
-        if(!level){
-            mem[level][rightlim] = std::max( findbest(mem, pos, rightlim-1,level), pos[rightlim]);
-        }
-        else{
-            if(rightlim == 0){
-                mem[level][0] = 0;
-            }
-            else{
-                previous = findbest(mem, pos, rightlim-pos[rightlim], level-1);
-                if(pos[rightlim] && previous){
-                    mem[level][rightlim] = std::max(findbest(mem, pos, rightlim-1,level), pos[rightlim] + previous);
-                }
-                else{
-                   mem[level][rightlim] =  findbest(mem, pos, rightlim-1,level);
-                }
-            }
-        }
-    }
-    return mem[level][rightlim];
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t; cin>>t;
+    while(t--) solve();
 }
