@@ -1,60 +1,42 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <queue>
 #include <utility>
+using namespace std;
 
-using std::pair;
-using std::vector;
-
-void solve();
-int countchildren( const int , const int &, vector<bool>&);
-int main(){
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    int t;
-    std::cin>>t;
-    while(t--){
-        solve();
-    }
-}
-
+typedef pair<int, int> bomb;
 void solve(){
-    int n;
-    std::cin>>n;
-    int tmp;
-    int elapsed;
-    vector<int> bombs = vector<int>(n);
-    vector< pair<int, int> > pos(n);
-    vector< bool > activated(n, true);
-    vector<int> mintime(n);
-    for(int i=0; i < n; i++){
-        std::cin>>tmp;
-        pos[i] = std::make_pair(tmp,i);
+  int n; cin>>n;
+  vector<int> toremove(n, 2);
+  vector<int> timers(n);
+  
+  for(int i=0; i<n; i++)
+    cin>>timers[i];
+    
+  for(int i=0; i <= (n-3)/2; i++){
+    timers[2*i + 1] = min(timers[2*i + 1], timers[i]-1);
+    timers[2*i + 2] = min(timers[2*i + 2], timers[i]-1);
+  }
+  auto cmp = [](bomb a, bomb b) { return a.first > b.first;};
+  priority_queue<bomb, std::vector<bomb>, decltype(cmp)> pq(cmp);
+  for(int i=(n-1)/2; i<n; i++) pq.push(make_pair(timers[i], i));
+  int counter = 0;
+  while(pq.size()){
+    auto elem = pq.top();
+    int current = elem.second;
+    int available = elem.first;
+    pq.pop();
+    if(counter >= available) {
+      cout<<"no\n"; return;
     }
-    elapsed=0;
-    int son;
-    std::sort(pos.begin(), pos.end());
-    for(int i=0; i < n ; i++){
-        if(activated[pos[i].second]){
-            son = (pos[i].second * 2) +1;
-            elapsed += countchildren(son,n, activated) + countchildren(son+1,n, activated);
-            if(elapsed >= pos[i].first){
-                std::cout<<"no\n";
-                return;
-            }
-            activated[pos[i].second] = false;
-            elapsed++;
-        }
-    }
-    std::cout<<"yes\n";
+    counter++;
+    toremove[(current-1)/2]--; if(toremove[(current-1)/2] == 0) pq.push(make_pair(timers[(current-1)/2], (current-1)/2));
+  }
+  cout<<"yes\n";
 }
-int countchildren( const int pos, const int & n, vector<bool>& activated){
-    if(pos >= n){
-        return 0;
-    }
-    if(activated[pos]){
-        activated[pos] = false;
-        return 1 + countchildren(pos*2+1,n, activated)+ countchildren((pos*2)+2,n, activated);
-    }
-    return 0;
+int main(){
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  int t; cin>>t;
+  while(t--) solve();
 }
