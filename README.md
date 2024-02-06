@@ -65,7 +65,7 @@ make
 | [Phantom Menace](Week11/PhantomMenace/this.pdf)                   | [Phantom Menace](Week11/PhantomMenace/src/main.cpp)                   |  100  |  11   |
 | [Pied Piper](ProblemOfTheWeek/PiedPiper/this.pdf)                 | [Pied Piper](ProblemOfTheWeek/PiedPiper/src/main.cpp)                 |  100  |POTW 12|
 | [New York](Week12/NewYork/this.pdf)                               | [New York](Week12/NewYork/src/main.cpp)                               |  100  |  12   |
-| [Return Of The Jedi](Week12/ReturnOfTheJedi/this.pdf)             | [Problem Of The Jedi](Week12/ReturnOfTheJedi/src/main.cpp)            |  100  |  12   |
+| [Return Of The Jedi](Week12/ReturnOfTheJedi/this.pdf)             | [Return Of The Jedi](Week12/ReturnOfTheJedi/src/main.cpp)             |  100  |  12   |
 | [Rumpelstitskin](Week12/Rumpelstitskin/this.pdf)                  | [Rumpelstitskin](Week12/Rumpelstitskin/src/main.cpp)                  |  100  |  12   |
 | [World Cup](Week12/WorldCup/this.pdf)                             | [World Cup](Week12/WorldCup/src/main.cpp)                             |  100  |  12   |
 | [Schneewittchen](ProblemOfTheWeek/Schneewittchen/this.pdf)        | [Schneewittchen](ProblemOfTheWeek/Schneewittchen/src/main.cpp)        |  100  |POTW 13|
